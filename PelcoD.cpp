@@ -1,7 +1,8 @@
 #include "PelcoD.hpp"
 
 #define SET_BIT(p,n) ((p) |= (1 << (n)))
-#define CLR_BIT(p,n) ((p) &= (~(1) << (n)))
+
+#define CLR_BIT(p,n) (p &= ~(1 << n))
 
 void PelcoD::setAddr(uint8_t addr)
 {
