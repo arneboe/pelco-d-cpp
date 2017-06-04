@@ -4,8 +4,10 @@
 
 #define CLR_BIT(p,n) (p &= ~(1 << n))
 
-void PelcoD::setAddr(uint8_t addr)
+
+PelcoD::PelcoD(uint8_t addr)
 {
+	clear();
 	data[0] = 0xFF;
 	data[1] = addr;
 }

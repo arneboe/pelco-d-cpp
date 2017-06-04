@@ -10,8 +10,8 @@ class PelcoD
 {
 public:
 	uint8_t data[7];
+	PelcoD(uint8_t addr);
 
-	void setAddr(uint8_t addr);
 
 	void moveUp(uint8_t speed);
 	void moveDown(uint8_t speed);
